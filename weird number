@@ -5,15 +5,14 @@ using namespace std;
 int main()
 {
     long long int n;
-    cin>>n;
-    long long int temp=n;
-    while(temp>1)
+    cin>>n;          //input n value
+    while(n>1)
     {
-        cout<<temp<<" ";// printing weird number series
-        if(temp%2==0)   //even number
-                temp=temp/2;
-        else            //odd number
-            temp=(temp*3)+1;
+        cout<<n<<" ";// printing weird number series
+        if(n%2==0)   //even number
+                n=n/2;
+        else         //odd number
+            n=(n*3)+1;
     }
     cout<<temp;
     return 0;
