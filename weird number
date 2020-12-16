@@ -10,11 +10,12 @@ int main()
     cout<<temp<<" ";
     while(temp>1)
     {
-        if(temp%2==0)
+        cout<<temp<<" ";// printing weird number series
+        if(temp%2==0)   //even number
                 temp=temp/2;
-        else
+        else            //odd number
             temp=(temp*3)+1;
-        cout<<temp<<" ";
     }
+    cout<<temp;
     return 0;
 }
