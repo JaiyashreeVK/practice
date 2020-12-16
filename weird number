@@ -4,10 +4,9 @@ using namespace std;
 
 int main()
 {
-    int n;
+    long long int n;
     cin>>n;
-    int temp=n;
-    cout<<temp<<" ";
+    long long int temp=n;
     while(temp>1)
     {
         cout<<temp<<" ";// printing weird number series
