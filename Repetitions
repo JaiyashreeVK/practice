@@ -1,0 +1,27 @@
+#include <bits/stdc++.h> 
+#include<iostream>
+using namespace std; 
+  
+int main() 
+{ 
+    string s;
+    cin>>s;
+    int maxi = 1, count = 1; 
+  
+    // Traverse the string 
+    for (int i = 1; i < s.length(); i++) { 
+        // If character is same as previous increment count value 
+        if (s[i] == s[i - 1]) { 
+            ++count; 
+        } 
+        else { 
+            maxi = max(maxi, count); 
+            count = 1; 
+        } 
+    } 
+    maxi = max(maxi, count); 
+  
+    // print the maximum lenght of repeating same charactes 
+    cout<<maxi; 
+} 
+  
