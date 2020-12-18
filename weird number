@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     long long int n;
-    cin>>n;          //input n value
+    cin>>n;         //input n value
     while(n>1)
     {
         cout<<n<<" ";// printing weird number series
