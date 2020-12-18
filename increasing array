@@ -1,0 +1,31 @@
+#include <bits/stdc++.h> 
+#include<iostream>
+using namespace std; 
+  
+int main()
+{
+
+	long long n;
+	cin>>n;                //input size of array
+	long long arr[n];      
+	for (int i=0; i<n; i++)
+	{
+		cin>>arr[i];        //input array
+	}
+	long long count = 0, diff = 0;
+ 
+	for (int j=0; j<n-1; j++)   // traverse the array
+	{
+		diff = 0;
+		if (arr[j + 1] < arr[j])     //finding elements to swap to make increasing array
+		{
+			diff = arr[j] - arr[j+1];  //finding number of times it takes to swap the elements by adding one
+			arr[j+1] = arr[j] ;        //swap the elements according to ascending order
+			count = count + diff;      //count the turns
+		}
+ 
+	}
+	cout <<count<<endl;       //print the number of turn it takes to make a increasing array
+ 
+ 
+}
